@@ -2,36 +2,82 @@
     margin: 0;
     padding: 0;
 }
-#main-doc{
+p,li{
+    color: black;
+    opacity: 0.8;
+    line-height: 1.5em;
+}
+body{
     display: flex;
+    position: relative;
+}
+#main-doc{
+    flex-grow: 2;
+    position: absolute;
+    left: 300px;
+    height: fit-content;
 
 }
-#main-doc #header{
+body #header{
+    position:fixed;
     border-right: 2px solid lightgray;
     width: 300px;
     height: fit-content;
+    /* overflow: scroll; */
     
     
 }
-#main-doc #header p{
+body #header header{
     font-size: 20px;
     text-transform: uppercase;
     border-bottom: 2px solid black;
     padding: 30px;
     
 }
-#main-doc #header ul{
+body #header ul{
   
     
 }
-#main-doc #header ul li{
+body #header ul li{
   
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid black;
     list-style: none;
     padding: 20px 30px ;
+    
+}
+body #header ul li a{
+  
+    text-decoration: none;
+    color: #000;
+    
+    
 }
 #main-doc #doc-page{
-    height: 100vh;
-    flex-grow: 2;
+    /* overflow: scroll; */
+    /* height: auto; */
+    /* flex-grow: 2; */
+    margin: 50px;
     /* padding: 50px; */
+}
+#main-doc #doc-page .main-section{
+
+}
+#main-doc #doc-page .main-section header{
+  font-size: 30px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+#main-doc #doc-page .main-section p{
+    padding: 10px;
+}
+#main-doc #doc-page .main-section li{
+    padding:0 30px;
+    margin:20px 0;
+}
+.code-snip{
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px 30px;
 }
